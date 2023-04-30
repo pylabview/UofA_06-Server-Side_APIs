@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamically Generate Elements</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body class="min-100-vh flex-column">
+    <header class="p-5 text-center text-white bg-primary">
+        <h1>Server-Side Api</h1>
+    </header>
+    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
+        <section class="card card-rounded col-7 bg-white">
+            <header class="card-header text-center">
+                <h2 class="text-white">Dynamically Generated Element</h2>
+            </header>
+            <div class="text-center p-4">
+                <p class="card-body">
+                    Generate dynamically HTML to display the GitHub users' login and URL of their GitHub
+                    <br>
+                    profile.
+                </p>
+                <button id="fetch-button" class="btn btn-danger">
+                    CLick Me
+                </button>
+            </div>
+            <div  class="flex-column"  id="users">
     
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
